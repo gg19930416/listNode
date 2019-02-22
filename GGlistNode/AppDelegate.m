@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "listNode.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,29 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    ListNode *a = [ListNode addNode:nil andValue:@1];
+    ListNode *b = [ListNode addNode:a andValue:@2];
+    ListNode *c = [ListNode addNode:b andValue:@3];
+    ListNode *d = [ListNode addNode:c andValue:@4];
+    ListNode *e = [ListNode addNode:d andValue:@5];
+   
+    [ListNode traveraslList:e resultBlock:^(NSInteger i) {
+        NSLog(@"%ld",i);
+    }];
+    NSLog(@"------------------");
+    
+    NSTimeInterval t1 = [[NSDate date] timeIntervalSinceNow];
+
+    ListNode *l = [ListNode reverse:e];
+    NSTimeInterval t2 = [[NSDate date] timeIntervalSinceNow];
+    NSLog(@"-----%f-----",t2 - t1);
+
+    
+    [ListNode traveraslList:l resultBlock:^(NSInteger i) {
+        NSLog(@"%ld",i);
+    }];
+
     return YES;
 }
 

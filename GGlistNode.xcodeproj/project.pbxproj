@@ -15,6 +15,7 @@
 		C688C872221FF16200917782 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C688C871221FF16200917782 /* main.m */; };
 		C688C87C221FF16200917782 /* GGlistNodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C688C87B221FF16200917782 /* GGlistNodeTests.m */; };
 		C688C887221FF16200917782 /* GGlistNodeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C688C886221FF16200917782 /* GGlistNodeUITests.m */; };
+		C688C897221FF3FC00917782 /* ListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C688C896221FF3FC00917782 /* ListNode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		C688C882221FF16200917782 /* GGlistNodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GGlistNodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C688C886221FF16200917782 /* GGlistNodeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGlistNodeUITests.m; sourceTree = "<group>"; };
 		C688C888221FF16200917782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C688C895221FF3FC00917782 /* ListNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListNode.h; sourceTree = "<group>"; };
+		C688C896221FF3FC00917782 /* ListNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListNode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		C688C861221FF16100917782 /* GGlistNode */ = {
 			isa = PBXGroup;
 			children = (
+				C688C894221FF3E600917782 /* listNode */,
 				C688C862221FF16100917782 /* AppDelegate.h */,
 				C688C863221FF16100917782 /* AppDelegate.m */,
 				C688C865221FF16100917782 /* ViewController.h */,
@@ -130,6 +134,15 @@
 				C688C888221FF16200917782 /* Info.plist */,
 			);
 			path = GGlistNodeUITests;
+			sourceTree = "<group>";
+		};
+		C688C894221FF3E600917782 /* listNode */ = {
+			isa = PBXGroup;
+			children = (
+				C688C895221FF3FC00917782 /* ListNode.h */,
+				C688C896221FF3FC00917782 /* ListNode.m */,
+			);
+			path = listNode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +278,7 @@
 				C688C867221FF16100917782 /* ViewController.m in Sources */,
 				C688C872221FF16200917782 /* main.m in Sources */,
 				C688C864221FF16100917782 /* AppDelegate.m in Sources */,
+				C688C897221FF3FC00917782 /* ListNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
